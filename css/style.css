@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 20px;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+main {
+    padding: 10px;
+    
+}
+
+span {
+    display: block;
+}
+
+.title{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+form {
+    color: white;
+    max-width: 870px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #001eff77, #402375a9);
+    gap: 30px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/*grupo 1 container dos inputs, textares*/
+.group-1 {
+    width: 100%;
+}
+
+.box-name, .box-email, .box-subject, #box-textarea {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 700; 
+}
+
+.group-1 input, textarea {/*input*/
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.textarea{
+    min-height: 150px;
+    max-height: 200px;
+}
+
+input:focus, textarea:focus {
+    border: 1.5px solid rgb(10, 9, 14);
+}
+
+.btn {
+    padding: 10px;
+    min-width: 50px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: lightgreen;
+}
+
+/*grupo 2, container das informacoes telefone,email, site etc*/
+.group-2 {
+    width: 100%;
+}
+
+.group-2 .adress-content, .phone-content, .email-content, .website-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    border: 1px solid rgba(105, 38, 149, 0.326);
+
+    font-size: 1.2rem;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .title {
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        border: 1px solid;
+        text-align: center;
+    }
+    .group-2{
+        display: none;
+    }
+    .btn {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
